@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Game</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <!-- Firebase Firestore -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    <script src="tetris.js"></script>
+</head>
+<body>
+    <div class="container">
+        <canvas id="tetris" width="300" height="600"></canvas>
+        <div class="side-panel">
+            <h1>TETRIS</h1>
+            <p>Score: <span id="score">0</span></p>
+            <button id="start-button">Start Game</button>
+            <button id="keybind-button">Set Keybinds</button>
+            <div id="keybinds" class="hidden">
+                <p>Move Left: <span id="move-left">Left Arrow</span></p>
+                <p>Move Right: <span id="move-right">Right Arrow</span></p>
+                <p>Move Down: <span id="move-down">Down Arrow</span></p>
+                <p>Rotate: <span id="rotate">Up Arrow</span></p>
+                <p>Slam Down: <span id="slam-down">Space</span></p>
+                <p>Store Block: <span id="store-block">Shift</span></p>
+                <button id="save-keybinds">Save Keybinds</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
